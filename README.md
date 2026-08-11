@@ -1,4 +1,5 @@
-# 🛡️ LAB 02: Insecure Output Handling & XSS via IA (OWASP LLM01 + LLM02) — TinyLlama Edition
+
+# 🛡️ LAB 02: Insecure Output Handling & XSS via IA (OWASP LLM02) — TinyLlama Edition
 
 Este repositório contém o laboratório prático de cibersegurança em Inteligência Artificial focado na vulnerabilidade de **Manipulação Insegura de Saída (Insecure Output Handling)** e na prevenção de ataques de **Cross-Site Scripting (XSS)** induzidos por IA através de **Sanitização de Saída (Output Guardrails & HTML Encoding)**.
 
@@ -6,7 +7,7 @@ Este repositório contém o laboratório prático de cibersegurança em Intelig�
 
 ## 🎯 Objetivo do Laboratório
 
-Demonstrar na prática como a renderização direta e sem sanitização de conteúdo gerado por Large Language Models (LLMs) expõe a aplicação web a execuções maliciosas de código no navegador do usuário (XSS), e como mitigar esse risco aplicando técnicas de *HTML Encoding* e codificação defensiva no backend Python.
+Demonstrar na prática como a vulnerabilidade **OWASP LLM02** (Insecure Output Handling) permite que payloads de Cross-Site Scripting (XSS) e tags HTML maliciosas gerados por uma LLM sejam renderizados diretamente e executados no navegador do usuário, e como implementar camadas defensivas de sanitização de saída (Output Guardrails com HTML Encoding) no backend Python para neutralizar esse risco.
 
 * **Modelo Utilizado:** TinyLlama 1.1B Chat (`TinyLlama/TinyLlama-1.1B-Chat-v1.0`)
 * **Ambiente de Execução:** Google Colab (GPU T4)
